@@ -1,0 +1,196 @@
+  /* Estilos para rolagem suave */
+  html {
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  body{
+   margin: 0%;
+   padding: 0%;
+   height: 100vh;
+   width: 100vw;
+   background: linear-gradient(72deg, rgba(17, 4, 4, 0.822) 0%, rgba(18, 17, 17, 0) 100%);
+  }
+  
+  /*Estilos para o cabeçalho (header)*/
+  header {
+    background: linear-gradient(180deg, rgba(17, 4, 4, 0.678) 0%, rgba(18, 17, 17, 0) 100%);
+    height: 70px;
+    width: 3000px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+      /*Estilos para a barra de pesquisa*/
+      .search {
+        height: 30px;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background: #f7f2f2d9;
+        right: 45px;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    
+    .search img {
+      width: 20px; /* Largura da imagem */
+      height: 20px; /* Altura da imagem */
+    }
+    
+    .search:hover input{
+      width: 400px;
+    }
+    
+    .search input{
+        width: 0; /* Largura expandida do campo de entrada ao passar o mouse */
+        outline: none;
+        border: none;
+        font-weight: 500;
+        transition: 0.8s;
+        background: transparent;
+    }
+  
+  /*Estilos para o menu*/
+  .menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 50%;
+  }
+  
+  .menu a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .menu-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-container a.active-menu {
+    background-color: #dfd6d65a;
+    border-radius: 100px;
+    padding: 8px 16px; 
+    line-height: 100%; 
+  }
+  
+  
+  
+  .menu-container a {
+    color: rgb(242, 236, 236);
+    text-decoration: none;
+    width: 150px; 
+    padding: 8px 0;
+    text-align: center;
+    margin-right: 100px; 
+    transition: 0.8s;
+  }
+  
+  .menu-container a:hover {
+    background-color: #dfd6d65a;
+    border-radius: 100px;
+    width: 150px; 
+  }
+
+  .container {
+    width: 1150px;
+    min-height: 650px;
+    height: 90px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 11%;
+    left: 14%;
+    
+}
+
+
+
+/* Estilo para os botões de navegação */
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.bar{
+  width: 40px;
+  height: 10px;
+  border: 1px solid #FFF;
+  margin: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.bar:hover {
+  background-color: #FFF;
+}
+
+input{
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 20%;
+}
+
+.navigation .label{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #cebbbb;
+  border-radius: 100px;
+  cursor: pointer;
+  margin: 0 6px;
+}
+
+.navigation a:hover {
+  background-color: #555;
+}
+
+/* Estilos para as legendas (títulos e descrições) */
+.slide .caption {
+  
+  background: linear-gradient(0deg, rgba(9, 9, 9, 0.855) 0%, rgba(18, 17, 17, 0.016) 100%);
+  color: white;
+  padding: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Estilo para o figcaption */
+figcaption {
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  margin-top: 10px; /* Espaço superior */
+  color: #333; /* Cor do texto */
+}
+
+
+.slide h2 {
+  font-size: 75px;
+  margin: 0;
+}
+
+/* Exibe a legenda ao passar o mouse sobre o slide */
+.slide:hover .caption {
+  opacity: 1;
+}
+

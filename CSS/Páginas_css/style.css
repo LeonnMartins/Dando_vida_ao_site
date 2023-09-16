@@ -1,0 +1,313 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* Estilos para rolagem suave */
+html {
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.center {
+  max-width: 1100px;
+  padding: 0 11%;
+  display: flex;
+}
+
+/*Estilos para o cabeçalho (header)*/
+header {
+  background: linear-gradient(180deg, rgba(17, 4, 4, 0.678) 0%, rgba(18, 17, 17, 0) 100%);
+  height: 70px;
+  width: 3000px;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+    /*Estilos para a barra de pesquisa*/
+    .search {
+      height: 30px;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background: #f7f2f2d9;
+      right: 45px;
+      display: flex;
+      position: fixed;
+      align-items: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+  
+  .search img {
+    width: 20px; /* Largura da imagem */
+    height: 20px; /* Altura da imagem */
+  }
+  
+  .search:hover input{
+    width: 400px;
+  }
+  
+  .search input{
+      width: 0; /* Largura expandida do campo de entrada ao passar o mouse */
+      outline: none;
+      border: none;
+      font-weight: 500;
+      transition: 0.8s;
+      background: transparent;
+  }
+
+/*Estilos para o menu*/
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-container a.active-menu {
+  background-color: #dfd6d65a;
+  border-radius: 100px;
+  padding: 8px 16px; 
+  line-height: 100%; 
+}
+
+
+
+.menu-container a {
+  color: rgb(242, 236, 236);
+  text-decoration: none;
+  width: 150px; 
+  padding: 8px 0;
+  text-align: center;
+  margin-right: 100px; 
+  transition: 0.8s;
+}
+
+.menu-container a:hover {
+  background-color: #dfd6d65a;
+  border-radius: 100px;
+  width: 150px; 
+}
+
+
+section.main {
+  min-height: 754px;
+  background-image: url('/Imagens/Tóquio.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.text-chamada {
+  font-family: Georgia, 'Times New Roman', Times, serif 'Times New Roman', Times, serif;
+  color: white;
+  position: absolute;
+  bottom: 260px;
+  left: 17%;
+  transform: translateX(-90%);
+  text-align: center;
+  font-size: 60px;
+  animation: slideUpDown 9s ease-in-out infinite;
+}
+
+@keyframes slideUpDown {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(20px);
+  }
+}
+
+.text-chamada h1 {
+  font-size: 150px;
+}
+
+.text-chamada h3 {
+  font-size: 30px;
+}
+
+/* ... Seus estilos CSS existentes ... */
+
+/* Estilos para a div que contém o botão "Sobre Tóquio" */
+.sobre-tóquio {
+  position:absolute;
+  top: 700px;
+  right: 700px;
+  z-index: 9999;
+  border-radius: 5px;
+  background-color: #dfd6d65a;
+  color: #fff;
+  border: none;
+  border-radius: 19px;
+  padding: 04px 20px;
+  cursor: pointer;
+}
+
+.sobre-tóquio:hover{
+  background-color: #9f9090;
+}
+
+/* Estilos para o botão "Ver Mais" */
+.btn-card {
+  z-index: 9999;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-card:hover {
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*Estilos para o container dos cards*/
+.container {
+  width: auto;
+  min-height: 800px;
+  flex-direction: row;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #1573d0ae;
+  padding: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/*Estilos para cada card*/
+.card{
+  bottom: -70px;
+  height:40vh;
+  border-radius: 19px;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+  cursor: pointer;
+  width: 361px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.20s;
+  margin: 10px;
+  position: relative;
+}
+
+.card:hover{
+  height:80vh;
+  background-image: linear-gradient(#239DF7, #8B23F7);
+  transform: scale(1.05);
+  z-index: 2; 
+}
+
+/*Estilos para a imagem do card*/
+.card .img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.15s;
+  z-index: 2;
+  position: relative;
+  opacity: 0.8;
+}
+
+.card .img span{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+  transition: all 15s;
+}
+
+.card:hover .img{
+  width: 600px;
+  opacity: 1;
+}
+
+.card:hover .img span{
+  font-size: 500px;
+}
+
+/*Estilos para o conteúdo do card*/
+.card .content{
+  padding: 0px 30px;
+  height: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+}
+
+.card:hover .content{
+  height: 290px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(30px);
+}
+
+.card .content .title{
+  color: #FFF;
+}
+
+
+.card .content .desc{
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 8px;
+}
+
+/*Estilos de fundo individual para cada card*/
+.card:nth-child(1) .img{
+  background-image: url('/Imagens/toquio.jpg'); 
+}
+
+.card:nth-child(2) .img{
+  background-image: url('/Imagens/população.jpg');
+}
+
+.card:nth-child(3) .img{
+  background-image: url('/Imagens/mapa\ de\ tóquio.jpg');
+}
+
+/*Estilos para o rodapé*/
+footer {
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(17, 16, 16) 100%); 
+  color: #fff; 
+  text-align: center;
+  padding: 10px 0; 
+}
+
+/*Estilos para o texto de direitos autorais*/
+.copyright{
+  font-size: 10px;
+  opacity: 0.7;
+}
+
