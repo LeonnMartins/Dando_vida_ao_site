@@ -111,7 +111,7 @@ header {
 
 section.main {
   min-height: 754px;
-  background-image: url('/Imagens/Tóquio.png');
+  background-image: url('../Imagens/Tóquio.png');
   background-size: cover;
   background-position: center;
 }
@@ -286,15 +286,15 @@ section.main {
 
 /*Estilos de fundo individual para cada card*/
 .card:nth-child(1) .img{
-  background-image: url('/Imagens/toquio.jpg'); 
+  background-image: url('../Imagens/toquio.jpg'); 
 }
 
 .card:nth-child(2) .img{
-  background-image: url('/Imagens/população.jpg');
+  background-image: url('../Imagens/população.jpg');
 }
 
 .card:nth-child(3) .img{
-  background-image: url('/Imagens/mapa\ de\ tóquio.jpg');
+  background-image: url('../Imagens/mapa\ de\ tóquio.jpg');
 }
 
 /*Estilos para o rodapé*/
