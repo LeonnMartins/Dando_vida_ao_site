@@ -22,49 +22,18 @@ html {
 }
 
 /*Estilos para o cabeçalho (header)*/
-header {
-  background: linear-gradient(180deg, rgba(17, 4, 4, 0.678) 0%, rgba(18, 17, 17, 0) 100%);
-  height: 70px;
-  width: 3000px;
-  position: fixed;
-  top: 0px;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-}
+  header {
+    background: linear-gradient(180deg, rgba(17, 4, 4, 0.678) 0%, rgba(18, 17, 17, 0) 100%);
+    height: 70px;
+    width: 3000px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+ }
 
-    /*Estilos para a barra de pesquisa*/
-    .search {
-      height: 30px;
-      cursor: pointer;
-      padding: 10px 20px;
-      border-radius: 30px;
-      background: #f7f2f2d9;
-      right: 45px;
-      display: flex;
-      position: fixed;
-      align-items: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-  }
-  
-  .search img {
-    width: 20px; /* Largura da imagem */
-    height: 20px; /* Altura da imagem */
-  }
-  
-  .search:hover input{
-    width: 400px;
-  }
-  
-  .search input{
-      width: 0; /* Largura expandida do campo de entrada ao passar o mouse */
-      outline: none;
-      border: none;
-      font-weight: 500;
-      transition: 0.8s;
-      background: transparent;
-  }
 
 /*Estilos para o menu*/
 .menu {
@@ -189,7 +158,7 @@ section.main {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #1573d0ae;
+  background: linear-gradient(72deg, rgba(1, 1, 1, 0.745) 0%, rgba(18, 17, 17, 0) 100%);
   padding: 50px;
   flex-wrap: wrap;
   gap: 20px;
@@ -310,4 +279,3 @@ footer {
   font-size: 10px;
   opacity: 0.7;
 }
-
