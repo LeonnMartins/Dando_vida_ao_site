@@ -83,7 +83,7 @@ section.main {
   background-position: center;
 }
 
-section .main .img{
+section.main img{
   min-height: 754px;
   size: cover;
   width: 100%;
