@@ -77,12 +77,16 @@ html {
   width: 150px; 
 }
 
-
 section.main {
   min-height: 754px;
-  background-image: url('/Imagens/Tóquio.png');
   background-size: cover;
   background-position: center;
+}
+
+section.main img{
+  min-height: 754px;
+  size: cover;
+  width: 100%;
 }
 
 .text-chamada {
